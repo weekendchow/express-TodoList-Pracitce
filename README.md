@@ -11,4 +11,4 @@ This is a TodoList using express at BackEnd and `Fetch API` to connect with Fron
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/weekendchow/MERN-TodoList/blob/master/LICENSEd) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/weekendchow/express-TodoList-Pracitce/blob/master/LICENSE) file for details
