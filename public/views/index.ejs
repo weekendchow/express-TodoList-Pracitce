@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-eqiv='X-UA-Compatibla' content='ie=edge'>
+  <title>todolist-test</title>
+  <link rel='stylesheet' href='views/main.css' type="text/css">
+</head>
+
+<body>
+  <nav>
+    <ul class='nav-list'>
+      <li>
+        <a href='#'>Home</a>
+      </li>
+      <li>
+        <a href='#'>Open SideBar</a>
+      </li>
+      <li>
+        <a href='#'>Change theme</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Todo</h1>
+    <ul id='list'>
+      <% todos.forEach(function(todo) { %>
+        <li>
+          <%= todo.title %>
+          <input type='button' value='Remove' id='<%= todo.id %>' >
+        </li>
+
+      <% }); %>
+    </ul>
+    <form id='form'>
+      <input id='todo-field' type='text' name='search' placeholder='search'>
+    </form>
+  </main>
+  <script src='/views/app.js'></script>
+  <!-- <script src='/views/bundle.js'></script> -->
+</body>
+
+</html>
